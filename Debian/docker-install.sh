@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install git wget nano -y
+sudo apt-get install git wget nano unzip -y
 
 sudo apt-get install iptables -y
 curl -fsSL https://get.docker.com -o get-docker.sh
