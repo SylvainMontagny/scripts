@@ -1,12 +1,12 @@
 #!/bin/sh
 
-# PUBLISHER
-mosquitto_pub \
-# BROKER
--h test.mosquitto.org \
-# TOPIC
--t montagny \
-# MESSAGE
--m hello_world
+# PUBLISHER	mosquitto_sub
+# BROKER 	-h
+# TOPIC		-t
 
- 
+
+mosquitto_sub  \
+-h test.mosquitto.org \
+-t montagny
+
+
