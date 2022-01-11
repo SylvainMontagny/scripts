@@ -1,5 +1,12 @@
 #!/bin/sh
+
+# PUBLISHER
 mosquitto_pub \
+# BROKER
 -h test.mosquitto.org \
+# TOPIC
 -t montagny \
--m fjdksqfjqk 
+# MESSAGE
+-m hello_world
+
+ 
