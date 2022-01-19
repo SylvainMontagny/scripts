@@ -22,6 +22,7 @@ cd $HOME
 mkdir tts
 cd tts
 wget https://www.thethingsindustries.com/docs/getting-started/installation/configuration/docker-compose-open-source.yml
+sed -i -e 's/lorawan-stack:latest/lorawan-stack:3.16.3/' docker-compose-open-source.yml
 mv docker-compose-open-source.yml docker-compose.yml
 wget https://www.thethingsindustries.com/docs/getting-started/installation/configuration/ttn-lw-stack-docker-open-source.yml
 mv ttn-lw-stack-docker-open-source.yml ttn-lw-stack-docker.yml
