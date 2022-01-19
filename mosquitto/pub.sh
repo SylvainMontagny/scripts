@@ -1,16 +1,10 @@
 #!/bin/sh
 
-# PUBLISHER	mosquitto_pub
-# BROKER 	-h
-# TOPIC		-t
-# MESSAGE	-m
+mosquitto_pub --debug \
+--host test.mosquitto.org \
+--topic montagny \
+--file test
 
-mosquitto_pub  \
--h test.mosquitto.org \
--t montagny \
--m  "{
-    "confirmed": false,
-    "fPort": 10,
-    "data": "aGVsbG8="
-    }" 
+  
+
 
