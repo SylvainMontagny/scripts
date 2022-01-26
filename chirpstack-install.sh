@@ -17,16 +17,11 @@ else
     sleep 3
 fi
 
-if [ -d "$CHIRPSTACK_DIR" ]; then
-    cd "$CHIRPSTACK_DIR"
-    sudo docker-compose down
-    rm -rf "$CHIRPSTACK_DIR"
-fi
+
 
 
 cd "$HOME"
-git clone https://github.com/brocaar/chirpstack-docker.git
-mv chirpstack-docker chirpstack
+cp –r Script/chirpstack-docker chirpstack 
 cd chirpstack
 sed -i -e "s/1700/$PORT_PKTFWD/g" docker-compose-env.yml
 sed -i -e "s/1700/$PORT_PKTFWD/g" docker-compose.yml
