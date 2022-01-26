@@ -12,23 +12,12 @@ else
 fi
 
 
-if [ -d "$TTS_DIR" ]; then
-    cd $TTS_DIR
-    sudo docker-compose down 
-    sudo rm -rf $TTS_DIR
-fi
+
 
 cd $HOME
-mkdir tts
+mv Scripts/tts-docker tts
 cd tts
-wget https://www.thethingsindustries.com/docs/getting-started/installation/configuration/docker-compose-open-source.yml
-sed -i -e 's/lorawan-stack:latest/lorawan-stack:3.16.3/' docker-compose-open-source.yml
-mv docker-compose-open-source.yml docker-compose.yml
-wget https://www.thethingsindustries.com/docs/getting-started/installation/configuration/ttn-lw-stack-docker-open-source.yml
-mv ttn-lw-stack-docker-open-source.yml ttn-lw-stack-docker.yml
-sed -i -e "s/thethings.example.com/$1/g" ttn-lw-stack-docker.yml
-mkdir -p config/stack
-mv ttn-lw-stack-docker.yml config/stack
+sed -i -e "s/thethings.example.com/$1/g" config/stack/ttn-lw-stack-docker.yml
 mkdir ./acme
 sudo chown 886:886 ./acme
 sudo docker-compose pull
