@@ -27,6 +27,9 @@ is:
       canonical-url: 'https://thethings.example.com/oauth'
       is:
         base-url: 'https://thethings.example.com/api/v3'
+  # Add some branding for the University    
+      site-name: 'LoRaWAN Server'
+      title: 'Formation LoRaWAN Université Savoie Mont Blanc'
 
 # HTTP server configuration
 http:
