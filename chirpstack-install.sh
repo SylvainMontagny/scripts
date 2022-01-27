@@ -21,7 +21,7 @@ fi
 
 
 cd "$HOME"
-cp –r Script/chirpstack-docker chirpstack 
+cp -r Scripts/chirpstack-docker chirpstack 
 cd chirpstack
 sed -i -e "s/1700/$PORT_PKTFWD/g" docker-compose-env.yml
 sed -i -e "s/1700/$PORT_PKTFWD/g" docker-compose.yml
