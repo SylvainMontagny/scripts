@@ -15,7 +15,7 @@ fi
 
 
 cd $HOME
-cp -r Scripts/tts-docker tts
+cp -r scripts/network-server/tts-docker tts
 cd tts
 sed -i -e "s/thethings.example.com/$1/g" config/stack/ttn-lw-stack-docker.yml
 mkdir ./acme

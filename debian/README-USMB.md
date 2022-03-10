@@ -3,7 +3,7 @@
 - NIC1 connected to vbox-tap0 / dhcp
 - NIC2 connected to vlan-140  / dhcp
 - Install nmcli, git, nano, npm, mosquitto, mosquitto-client, node-red.
-- /home/debian has /Scripts from github/SylvainMontagny
+- /home/debian had /scripts from github/SylvainMontagny
 
 ## connection
 - Login : root
@@ -12,5 +12,5 @@
 
 
 ## TODO
-- Add git dashboard-lorawan, add curl, add wget
+- Add git dashboard-lorawan, add curl, add wget, add unzip
 
