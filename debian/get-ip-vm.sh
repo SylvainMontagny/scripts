@@ -16,8 +16,9 @@ if [ -z ${1} ]; then
     mac=$(vboxmanage showvminfo "${vm}" | grep "Interface 'vbox-tap0'" | sed 's/ //g' | cut -b 10-21 | sed s'/.\{2\}/&:/g;s/:$//')
     if [ ! -z $mac ]
       then  
- 	ip=$(sshpass -p 'Pa$$word8c' ssh -o 'StrictHostKeyChecking no' tc@172.29.253.2 "cat /var/db/dhcpd.leases | grep -i -B 10 ${mac} | grep lease | tail -1 | cut -d ' ' -f 2")
-    ip2=$(sshpass -p 'password' ssh -o 'StrictHostKeyChecking no' root@$ip "ip a | grep -i enp0s8 | tail -1 | cut -d ' ' -f 6")
+ 	ip=$(sshpass -p 'Pa$$word8c' ssh -o 'StrictHostKeyChecking no'  tc@172.29.253.2 "cat /var/db/dhcpd.leases | grep -i -B 10 ${mac} | grep lease | tail -1 | cut -d ' ' -f 2")
+    ssh-keygen -R $ip > /dev/null
+    ip2=$(sshpass -p 'password' ssh -o 'StrictHostKeyChecking no' -o LogLevel=ERROR root@$ip "ip a | grep -i enp0s8 | tail -1 | cut -d ' ' -f 6") > /dev/null
         else 
 	ip="Pas d'IP"
      fi

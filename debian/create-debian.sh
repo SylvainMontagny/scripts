@@ -4,7 +4,7 @@ vm_name=$1
 nbr_vm=$2
 
 create_vm () {
-vboxmanage import debian-lora.ova
+vboxmanage import /mnt/public_nas_maurienne/virtualmachines/VirtualBox/sylvain/debian-lora.ova 
 vboxmanage modifyvm "debian-lora" --name "$1"
 vboxmanage startvm "$1" --type headless 
 }
