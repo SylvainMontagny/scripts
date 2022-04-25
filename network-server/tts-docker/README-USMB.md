@@ -1,3 +1,5 @@
+TTS version 3.16.3
+
 # Modifying the User Interface
 is.oauth.ui.site-name: The site name / "The Things Stack for LoRaWAN Account"
 is.oauth.ui.title: The page title
