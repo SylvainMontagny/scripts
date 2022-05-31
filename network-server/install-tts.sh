@@ -24,5 +24,5 @@ sudo docker-compose pull
 sudo docker-compose run --rm stack is-db init
 sudo docker-compose run --rm stack is-db create-admin-user --id admin --email your@email.com
 sudo docker-compose run --rm stack is-db create-oauth-client --id cli --name "Command Line Interface" --owner admin --no-secret --redirect-uri "local-callback" --redirect-uri "code"
-sudo docker-compose run --rm stack is-db create-oauth-client --id console --name "Console" --owner admin --secret 'console' --redirect-uri "https://$1/console/oauth/callback" --redirect-uri "/console/oauth/callback" --logout-redirect-uri "https://ttn1.$1/console" --logout-redirect-uri "/console"
+sudo docker-compose run --rm stack is-db create-oauth-client --id console --name "Console" --owner admin --secret 'console' --redirect-uri "https://$1/console/oauth/callback" --redirect-uri "/console/oauth/callback" --logout-redirect-uri "https://$1/console" --logout-redirect-uri "/console"
 sudo docker-compose up -d
