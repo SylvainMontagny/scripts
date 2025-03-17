@@ -1,0 +1,42 @@
+[
+    {
+      "model": "UG65",
+      "brand": "Milesight"
+    },
+    {
+      "model": "RN2483",
+      "brand": "Microchip"
+    },
+    {
+      "model": "RN2903",
+      "brand": "Microchip"
+    },
+    {
+      "model": "test",
+      "brand": "otaa"
+    },
+    {
+      "model": "SX1272",
+      "brand": "Semtech"
+    },
+    {
+      "model": "RAK811",
+      "brand": "RAKwireless"
+    },
+    {
+      "model": "RAK8213",
+      "brand": "RAKwireless"
+    },
+    {
+      "model": "LM401",
+      "brand": "Laird"
+    },
+    {
+      "model": "LM402",
+      "brand": "Laird"
+    },
+    {
+      "model": "LM411",
+      "brand": "Laird"
+    }
+  ]

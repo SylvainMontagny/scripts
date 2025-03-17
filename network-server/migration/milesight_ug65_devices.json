@@ -1,0 +1,66 @@
+{
+  "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsb3JhLWFwcC1zZXJ2ZXIiLCJleHAiOjE3NDA0MTg0MDAsImlzcyI6ImxvcmEtYXBwLXNlcnZlciIsIm5iZiI6MTc0MDMzMjAwMCwic3ViIjoidXNlciIsInVzZXJuYW1lIjoiYXBpdXNlciJ9.xZOBaWRUhuJKDCnEijtr1WEqGjYQN6Xr0f7WOzZssB0",
+  "gatewayEui": "24E124FFFEF8E6D8",
+  "devices": [
+    {
+      "devEUI": "ecdb86fffd5a42f3",
+      "name": "devicetest",
+      "applicationID": "14",
+      "appName": "sandbox",
+      "description": "test",
+      "profileName": "ClassA-OTAA",
+      "fCntUp": 104,
+      "fCntDown": 0,
+      "appKey": "ef8bc873f08b7f31763e1347c9fbd3af",
+      "devAddr": "062c0084",
+      "appSKey": "9339a1fe9aeba371903a7b8b8a5cd99a",
+      "nwkSKey": "07fca6bd7f25bd46b0f88b34f3fb995f",
+      "lastSeenAt": "9 seconds ago"
+    },
+    {
+      "devEUI": "0000000000000001",
+      "name": "dev1",
+      "applicationID": "14",
+      "appName": "sandbox",
+      "description": "test",
+      "profileName": "ClassA-OTAA",
+      "fCntUp": 10,
+      "fCntDown": 0,
+      "appKey": "00000000000000010000000000000001",
+      "devAddr": "00000001",
+      "appSKey": "00000000000000010000000000000001",
+      "nwkSKey": "00000000000000010000000000000001",
+      "lastSeenAt": "-"
+    },
+    {
+      "devEUI": "0000000000000000",
+      "name": "fd",
+      "applicationID": "14",
+      "appName": "sandbox",
+      "description": "d",
+      "profileName": "ClassA-OTAA",
+      "fCntUp": 0,
+      "fCntDown": 0,
+      "appKey": "00000000000000000000000000000000",
+      "devAddr": "",
+      "appSKey": "",
+      "nwkSKey": "",
+      "lastSeenAt": "-"
+    },
+    {
+      "devEUI": "1111111111111111",
+      "name": "test",
+      "applicationID": "14",
+      "appName": "sandbox",
+      "description": "tst",
+      "profileName": "ClassA-OTAA",
+      "fCntUp": 0,
+      "fCntDown": 0,
+      "appKey": "01010101010101010101010101010101",
+      "devAddr": "",
+      "appSKey": "",
+      "nwkSKey": "",
+      "lastSeenAt": "-"
+    }
+  ]
+}
